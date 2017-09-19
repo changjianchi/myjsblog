@@ -6,7 +6,7 @@
 title: 小常Blog
 subtitle:
 description:
-author: 小常
+author: changjianchi
 language:
 timezone:
 
@@ -72,9 +72,16 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: smack
+theme: polarbear
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: rsync
+  host: 118.190.143.122
+  user: root
+  root: /home/wwwroot/myjsblog/public/
+  port: 22
+  delete: true
+  verbose: true
+  ignore_errors: true
